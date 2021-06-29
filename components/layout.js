@@ -1,11 +1,11 @@
 import Navbar from './nav'
-
-
+import { AuthContextProvider } from '../stores/authContext';
 const Layout = ({children}) => {
     return ( 
         <div className='main-container'>
-
-         <Navbar/>
+        <AuthContextProvider>
+            <Navbar/>
+        </AuthContextProvider>
           {children }
         </div>
     );

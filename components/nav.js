@@ -1,10 +1,16 @@
 import  Link from 'next/link';
 import Image from 'next/image'
+import AuthContext from '../stores/authContext';
+import { useContext } from 'react';
 
 export default function  Nav () {
+
     const style={margin: "0 auto",
                 border:"1px solid red"
                 };
+
+    const {user,login,logout} = useContext(AuthContext);
+      console.log(user);
     return ( 
      <div className="container">
          <nav>
@@ -13,6 +19,8 @@ export default function  Nav () {
             <ul>
                 <li><Link href="/home">Home</Link></li>
                 <li><Link href="/guides">Guides</Link></li>
+                <li style={{cursor:"pointer"}} onClick={login} className="btn"> Login/signUp</li>
+                <li style={{cursor:"pointer"}} onClick={logout} className="btn"> Logout</li>
             </ul>
          </nav>
          <div className="banner">
