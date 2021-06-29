@@ -8,7 +8,7 @@ export default function  Nav () {
     return ( 
      <div className="container">
          <nav>
-            <Image  src="/rupee.png" width={50} height={48} />
+            <Image  src="/rupee.png" width={50} height={48} alt="logo" />
                 <h1 style={style}>Gaming Vibes</h1>
             <ul>
                 <li><Link href="/home">Home</Link></li>
@@ -16,7 +16,7 @@ export default function  Nav () {
             </ul>
          </nav>
          <div className="banner">
-            <Image src="/claudio-luiz-castro-_R95VMWyn7A-unsplash.jpg" width={966} height={276} />
+            <Image src="/claudio-luiz-castro-_R95VMWyn7A-unsplash.jpg" width={966} height={276} alt="image banner"/>
          </div>
      </div>
      );
