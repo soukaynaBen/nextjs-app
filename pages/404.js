@@ -9,7 +9,7 @@ const NotFound = () => {
               router.push('/');
           }, 3000);
     }
-        ,[])
+        ,[router])
     return ( <div>
         Ooops page not found !!!
     </div> );
