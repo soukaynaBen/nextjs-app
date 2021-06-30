@@ -5,8 +5,8 @@ const Layout = ({children}) => {
         <div className='main-container'>
         <AuthContextProvider>
             <Navbar/>
-        </AuthContextProvider>
           {children }
+        </AuthContextProvider>
         </div>
     );
 }

@@ -5,7 +5,7 @@ exports.handler= async (event,context)=>{
         { title:'Ultimate short fighter guide',author:'chun-li'},
         ];
 
-    if(context.clinetContext.user){
+    if(context.clientContext.user){
         return {
             statusCode:200,
             body:JSON.stringify({
@@ -16,7 +16,7 @@ exports.handler= async (event,context)=>{
 
     return {
         statusCode:200,
-        body:JSON.stringify(guides)
+        body:JSON.strqingify(guides)
     }
 
 }
