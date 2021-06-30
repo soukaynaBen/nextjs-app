@@ -9,7 +9,6 @@ export default function  Nav () {
                 };
 
     const {user,login,logout,authReady} = useContext(AuthContext);
-      console.log(user);
     return ( 
      <div className="container">
          <nav>
