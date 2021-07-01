@@ -4,9 +4,9 @@ exports.handler= async (event,context)=>{
         { title:'Ultimate short fighter guide',author:'chun-li'}
         ];
        console.log("context:"+context);
-    if(context.clientContext.user){
+    if(!context.clientContext.user){
         return {
-            statusCode:200,
+            statusCode:401,
             body:JSON.stringify({
                 msg:'you are unauthorized to access'
             })
