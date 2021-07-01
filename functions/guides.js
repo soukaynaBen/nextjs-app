@@ -6,7 +6,7 @@ exports.handler= async (event,context)=>{
        console.log("context:"+context);
     if(context.clientContext.user){
         return {
-            statusCode:200,
+            statusCode:401,
             body:JSON.stringify({
                 msg:'you are unauthorized to access'
             })
