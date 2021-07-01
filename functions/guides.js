@@ -15,7 +15,7 @@ exports.handler= async (event,context)=>{
 
     return {
         statusCode:200,
-        body:JSON.strqingify(guides)
+        body:JSON.stringify(guides)
     }
 
 }
